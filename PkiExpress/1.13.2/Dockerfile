@@ -1,7 +1,5 @@
-# docker build --build-arg PKI_LICENSE={license path} .
 FROM ubuntu:18.04
 
-ARG PKI_LICENSE
 ARG DEBIAN_FRONTEND=noninteractive
 RUN apt-get update -qq 
 RUN apt-get install -qqy --no-install-recommends apt-utils
@@ -31,6 +29,3 @@ RUN chmod +x /usr/local/bin/pkie
 RUN mkdir /var/log/pkie
 RUN chmod 777 /var/log/pkie
 RUN pkie config --set logdir=/var/log/pkie
-
-COPY ${PKI_LICENSE} PkiLicense.config
-RUN pkie activate PkiLicense.config
