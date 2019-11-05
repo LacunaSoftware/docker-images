@@ -9,7 +9,7 @@ WORKDIR /PkiSuiteSamples/nodejs/expressmvc/
 
 RUN npm install
 
-RUN echo "wget https://raw.githubusercontent.com/LacunaSoftware/PkiSuiteSamples/master/python/flask/LacunaPkiLicense.config" | tee init.sh
+RUN echo "wget https://raw.githubusercontent.com/LacunaSoftware/PkiSuiteSamples/master/nodejs/expressmvc/LacunaPkiLicense.config" | tee init.sh
 RUN echo "pkie activate LacunaPkiLicense.config" | tee -a init.sh
 RUN echo "npm start" | tee -a init.sh
 RUN chmod 777 init.sh
