@@ -1,6 +1,7 @@
 FROM pkiedocker:latest
 
 ARG DEBIAN_FRONTEND=noninteractive
+RUN apt-get update
 RUN apt-get install -y python python-pip git
 RUN git clone https://github.com/LacunaSoftware/PkiSuiteSamples.git
 WORKDIR /PkiSuiteSamples/python/flask/

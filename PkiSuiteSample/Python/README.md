@@ -1,6 +1,6 @@
 # Pki Suite Sample for Python Dockerfile
 
-## Build Image from Dockerfile
+## Build Image
 
 Download the [Pki Express Dockerfile](https://github.com/LacunaSoftware/docker-images/tree/master/PkiExpress) and in the same folder you save it run the command
 
